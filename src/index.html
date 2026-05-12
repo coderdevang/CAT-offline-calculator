@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAT On-Screen Calculator 2026 - PC Edition</title>
+    <meta
+      name="description"
+      content="Offline CAT 2026 on-screen calculator practice app for desktop."
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <main class="window-shell" aria-label="CAT On-Screen Calculator 2026">
+      <section class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front">
+        <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle">
+          <span class="ui-dialog-title">Calculator</span>
+          <div class="window-controls" aria-label="Window controls">
+            <button id="minimize-button" class="titlebar-button" type="button" title="Minimize" aria-label="Minimize">-</button>
+            <button id="close-button" class="titlebar-button close-button" type="button" title="Close" aria-label="Close">&times;</button>
+          </div>
+        </div>
+
+        <div id="keyPad" class="calc_container ui-dialog-content ui-widget-content">
+          <div id="mainContentArea">
+            <input id="keyPad_UserInput1" class="keyPad_TextBox1" readonly type="text" />
+            <div class="text_container">
+              <input id="keyPad_UserInput" class="keyPad_TextBox" maxlength="30" readonly type="text" />
+              <span id="memory" class="memoryhide importantRuleMemory1">
+                <span class="memory-indicator">M</span>
+              </span>
+            </div>
+            <div class="clear"></div>
+            <div class="left_sec">
+              <div class="calc_row clear">
+                <a id="keyPad_MC" class="keyPad_btnMemoryOp">MC</a>
+                <a id="keyPad_MR" class="keyPad_btnMemoryOp">MR</a>
+                <a id="keyPad_MS" class="keyPad_btnMemoryOp">MS</a>
+                <a id="keyPad_M+" class="keyPad_btnMemoryOp">M+</a>
+                <a id="keyPad_M-" class="keyPad_btnMemoryOp">M-</a>
+              </div>
+              <div class="calc_row clear">
+                <a id="keyPad_btnBack" class="keyPad_btnCommand calc_arrows"><div class="backspace-glyph">&larr;</div></a>
+                <a id="keyPad_btnAllClr" class="keyPad_btnCommand">C</a>
+                <a id="keyPad_btnInverseSign" class="keyPad_btnUnaryOp">+/-</a>
+                <a id="keyPad_btnSquareRoot" class="keyPad_btnUnaryOp"><div class="sqrt-glyph">&radic;</div></a>
+              </div>
+              <div class="calc_row clear number-row">
+                <a id="keyPad_btn7" class="keyPad_btnNumeric">7</a>
+                <a id="keyPad_btn8" class="keyPad_btnNumeric">8</a>
+                <a id="keyPad_btn9" class="keyPad_btnNumeric">9</a>
+                <a id="keyPad_btnDiv" class="keyPad_btnBinaryOp op-div">/</a>
+                <a id="keyPad_%" class="keyPad_btnBinaryOp op-percent">%</a>
+              </div>
+              <div class="calc_row clear">
+                <a id="keyPad_btn4" class="keyPad_btnNumeric">4</a>
+                <a id="keyPad_btn5" class="keyPad_btnNumeric">5</a>
+                <a id="keyPad_btn6" class="keyPad_btnNumeric">6</a>
+                <a id="keyPad_btnMult" class="keyPad_btnBinaryOp op-mult">*</a>
+                <a id="keyPad_btnInverse" class="keyPad_btnUnaryOp"><span class="baseele">1/x</span></a>
+              </div>
+              <div class="calc_row clear">
+                <a id="keyPad_btn1" class="keyPad_btnNumeric">1</a>
+                <a id="keyPad_btn2" class="keyPad_btnNumeric">2</a>
+                <a id="keyPad_btn3" class="keyPad_btnNumeric">3</a>
+                <a id="keyPad_btnMinus" class="keyPad_btnBinaryOp op-minus">-</a>
+              </div>
+              <div class="calc_row clear">
+                <a id="keyPad_btn0" class="keyPad_btnNumeric">0</a>
+                <a id="keyPad_btnDot" class="keyPad_btnNumeric op-dot">.</a>
+                <a id="keyPad_btnPlus" class="keyPad_btnBinaryOp op-plus">+</a>
+                <a id="keyPad_btnEnter" class="keyPad_btnCommand importantRule1"><div>=</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./renderer.js"></script>
+  </body>
+</html>
