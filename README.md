@@ -16,7 +16,15 @@ An offline, floating desktop calculator for CAT exam practice. The app recreates
 
 ## Quick Start
 
-Double-click:
+Download or open the portable app:
+
+```text
+release\CAT On-Screen Calculator 2026 1.0.0.exe
+```
+
+No installation is needed for this file.
+
+If you are working from the source project, you can also double-click:
 
 ```text
 Run Floating Calculator.bat
@@ -31,12 +39,13 @@ The launcher will:
 
 ## Run A Built Release
 
-If the app is already built, you can open either file from the `release` folder:
+The repo includes the portable Windows `.exe`:
 
 ```text
 release\CAT On-Screen Calculator 2026 1.0.0.exe
-release\CAT On-Screen Calculator 2026 Setup 1.0.0.exe
 ```
+
+The installer is not committed to the repo. You can generate it locally with `npm run dist`.
 
 ## Developer Setup
 
@@ -69,6 +78,8 @@ Create the Windows installer and portable app:
 ```bash
 npm run dist
 ```
+
+The generated installer and unpacked build stay ignored by Git. Only the portable `.exe` is tracked for easy downloading.
 
 ## Project Structure
 
