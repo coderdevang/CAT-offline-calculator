@@ -4,106 +4,99 @@ An offline, floating desktop calculator for CAT exam practice. The app recreates
 
 > This is an independent practice tool. It is not affiliated with, endorsed by, or distributed by IIMs or the official CAT exam authorities.
 
-## Highlights
+---
+
+# Highlights
 
 - CAT-style calculator layout for familiar mock-test practice
 - Small floating desktop window
 - Always-on-top behavior
-- Works offline after setup
-- Simple double-click launcher for Windows users
-- Portable `.exe` and installer build support
-- Built with Electron, Vite, TypeScript, and plain JavaScript calculator logic
+- Fully offline desktop application
+- Simple installer with normal Windows app installation
+- Lightweight and fast startup
 
-## Quick Start
+---
 
-Download or open the portable app:
+# Installation
 
-```text
-release\CAT On-Screen Calculator 2026 1.0.0.exe
-```
-
-No installation is needed for this file.
-
-If you are working from the source project, you can also double-click:
+Download and run the installer:
 
 ```text
-Run Floating Calculator.bat
+CAT On-Screen Calculator Setup 2026 1.0.0.exe
 ```
 
-The launcher will:
+The installer will install the application like a normal Windows desktop app.
 
-1. Open the built calculator immediately if it already exists.
-2. Install dependencies if `node_modules` is missing.
-3. Build the desktop app if the `.exe` is missing.
-4. Launch the floating calculator.
+After installation, you can:
 
-## Run A Built Release
+- Launch it from the Start Menu
+- Create a desktop shortcut
+- Pin it to the taskbar
+- Use it offline anytime
 
-The repo includes the portable Windows `.exe`:
+---
 
-```text
-release\CAT On-Screen Calculator 2026 1.0.0.exe
-```
+# Quick Start
 
-The installer is not committed to the repo. You can generate it locally with `npm run dist`.
+1. Download the installer
+2. Run the setup file
+3. Complete the installation
+4. Open the calculator from your desktop or Start Menu
 
-## Developer Setup
+That’s it.
 
-Install dependencies:
+---
 
-```bash
-npm install
-```
+# Purpose
 
-Run the app in development mode:
+This calculator is designed for CAT aspirants who want a clean and distraction-free desktop calculator experience similar to the one used during mock tests and exams.
 
-```bash
-npm run dev
-```
+It is especially useful while solving:
 
-Type-check the project:
+- Quantitative Aptitude
+- DI & LR sets
+- Mock tests
+- PDF practice sheets
+- Previous year papers
 
-```bash
-npm run typecheck
-```
+---
 
-Build the web and Electron output:
+# Credits
 
-```bash
-npm run build
-```
+Designed and developed by **Devang Joshi**.
 
-Create the Windows installer and portable app:
+Built independently for students, aspirants, and serious competitive exam preparation.
 
-```bash
-npm run dist
-```
+---
 
-The generated installer and unpacked build stay ignored by Git. Only the portable `.exe` is tracked for easy downloading.
+# Connect & Say Hello
 
-## Project Structure
+Feel free to connect, share feedback, suggest improvements, report bugs, or just say hello.
 
-```text
-electron/                  Electron main process and preload code
-src/                       Calculator UI, styles, and calculator logic
-build/icon.ico             Desktop app icon
-Run Floating Calculator.bat Windows double-click launcher
-Run-Floating-Calculator.ps1 Setup/build/run helper script
-```
+## LinkedIn
 
-## Launcher Files
+https://www.linkedin.com/in/devang-joshi-/
 
-`Run Floating Calculator.bat` is the recommended file for normal use. It checks for an existing built app first, then falls back to the PowerShell setup helper when needed.
+## GitHub
 
-`Run-Floating-Calculator.ps1` contains the setup logic: it checks for `npm`, installs dependencies when missing, builds the release if needed, and opens the calculator.
+https://github.com/coderdevang
 
-## Author
+---
 
-Created by Devang Joshi.
+# Best Wishes
 
-- LinkedIn: https://www.linkedin.com/in/devang-joshi-/
-- GitHub: https://github.com/coderdevang
+Wishing you the very best for your CAT preparation and future career ahead.
 
-## License
+Stay consistent.
+
+Small improvements every single day compound massively over time.
+
+Good luck for your mocks, exams, interviews, placements, and everything beyond.
+
+Keep pushing.
+
+---
+
+# License
 
 MIT License. See [LICENSE](LICENSE) for details.
